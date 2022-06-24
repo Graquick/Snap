@@ -1,0 +1,48 @@
+import React, { useState, useEffect, useRef } from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Icon } from '@iconify/react';
+
+import Header from '../components/header.js'
+
+export default function Home() {
+  return (
+    <div className="py-0 px-8">
+      <Head>
+        <title>Snap</title>
+        <meta name="description" content="Developed by Brima Freeman" />
+        <link rel="icon" href="" />
+      </Head>
+
+      <Header />
+
+      <main className="min-h-screen bg-green-200 flex flex-col items-center justify-center w-full">
+        <div className="flex w-[1440px] h-[1024px] justify-between bg-blue-400 ">
+            <div className=" bg-purple-500 w-[718px] h-[669px]">
+              <h1>Make remote work</h1>
+              <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+              <button>
+                Learn more
+              </button>
+              <div className="clients">
+
+              </div>
+            </div> 
+
+            <div className="bg-red-500 w-[502px] h-[669px]">
+              <Image src="/image-hero-desktop.png"
+                alt="Snap"
+                width={502}
+                height={669}
+                layout="responsive"
+                blurDataURL="/image-hero-desktop.png"
+              />
+            </div>
+        </div>
+      </main>
+    </div>
+  )
+}
