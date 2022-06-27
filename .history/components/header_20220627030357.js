@@ -21,8 +21,6 @@ const MyLink = forwardRef((props, ref) => {
   )
 })
 
-MyLink.displayName = 'MyLink';
-
 function Header() {
 
   const [enabled, setEnabled] = useState(false)

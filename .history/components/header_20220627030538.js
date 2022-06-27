@@ -21,7 +21,7 @@ const MyLink = forwardRef((props, ref) => {
   )
 })
 
-MyLink.displayName = 'MyLink';
+MyComponent.displayName = 'MyComponent';
 
 function Header() {
 
