@@ -14,17 +14,6 @@ import { Switch } from '@headlessui/react'
 
 function Header() {
 
-  const MyLink = forwardRef((props, ref) => {
-    let { href, children, ...rest } = props
-    return (
-      <Link href={href}>
-        <a ref={ref} {...rest}>
-          {children}
-        </a>
-      </Link>
-    )
-  })
-
   const [enabled, setEnabled] = useState(false)
   const [enabledTwo, setEnabledTwo] = useState(false)
 
