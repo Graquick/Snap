@@ -23,6 +23,7 @@ function SideBar() {
 
     const variantsMenu = {
         opened: {
+            x: 0,
             display: "block"
         },
         closed: {
