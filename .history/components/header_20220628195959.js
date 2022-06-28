@@ -54,7 +54,7 @@ function Header() {
         <div className="flex w-[850px] justify-between items-center 2xl:w-[750px] xl:w-[600px]">
             <div className="font-[Arial, Helvetica, sans-serif] text-[4rem] font-bold text-black cursor-default transition-all w-fit duration-150 ease-in-out relative group dark:text-white lg:text-[3rem]"> 
             <svg
-              className="absolute top-[2.5rem] -right-8 w-[26px] h-[26px] transition-all duration-500 ease-in-out lg:top-[1.75rem]"
+              className="absolute top-[2.5rem] -right-8 w-[26px] h-[26px] transition-all duration-500 ease-in-out lg:top-[1.rem]"
               width={26}
               height={24}
               viewBox="0 0 26 24"
