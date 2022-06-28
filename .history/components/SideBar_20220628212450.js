@@ -186,7 +186,7 @@ function SideBar() {
                                                         {({ active }) => (
                                                         <MyLink href="#"
                                                             className={`${
-                                                            active ? 'bg-neutral-200 dark:bg-neutral-500 focus:outline-none' : 'dark:text-white'
+                                                            active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
                                                             } ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                         >
                                                             History
