@@ -89,14 +89,14 @@ function SideBar() {
                             <Menu>
                                 {({open}) => (
                                 <>
-                                    <Switch checked={enabled} onChange={setEnabled} as={motion.div} whileHover={{ scale: 1.15, x: -10, y: -5 }} className={`${enabled ? 'text-violet-400 dark:text-yellow-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4 focus:outline-0`}>
-                                    Features <Icon icon="akar-icons:chevron-down"  className={`${enabled ? 'rotate-180' : 'rotate-0'} focus:outline-0 transition-all duration-150 ease-in-out`}/>
+                                    <Switch checked={enabled} onChange={setEnabled} as={motion.div} whileHover={{ scale: 1.15, x: -10, y: -5 }} className={`${enabled ? 'text-violet-400 dark:text-yellow-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4 focus:outline-none`}>
+                                    Features <Icon icon="akar-icons:chevron-down"  className={`${enabled ? 'rotate-180' : 'rotate-0'} focus:outline-none transition-all duration-150 ease-in-out`}/>
                                     </Switch>
                                     {enabled && (
                                     <>
                                         <AnimatePresence>
                                             <Menu.Items static 
-                                            className="flex flex-col justify-center text-black h-[13rem] focus:outline-0 w-44 mt-2 dark:text-white"
+                                            className="flex flex-col justify-center text-black h-[13rem] focus:outline-none w-44 mt-2 dark:text-white"
                                             as={motion.div}
                                             variants={variantsLinks}
                                             initial="closed"
@@ -110,7 +110,7 @@ function SideBar() {
                                                     <MyLink href="#"
                                                     className={`${
                                                         active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-te'
-                                                    } focus:outline-0 ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                    } focus:outline-none ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                     >
                                                     <Icon icon="uil:clipboard-notes" /> Features
                                                     </MyLink>
@@ -122,7 +122,7 @@ function SideBar() {
                                                     <MyLink href="#"
                                                     className={`${
                                                         active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-te'
-                                                    } focus:outline-0 ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                    } focus:outline-none ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                     >
                                                     <Icon icon="uil:calendar-alt" /> Calendar
                                                     </MyLink>
@@ -134,7 +134,7 @@ function SideBar() {
                                                     <MyLink href="#"
                                                     className={`${
                                                         active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                    } focus:outline-0 ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                    } focus:outline-none ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                     >
                                                     <Icon icon="uil:lightbulb-alt" /> Reminders
                                                     </MyLink>
@@ -146,7 +146,7 @@ function SideBar() {
                                                     <MyLink href="#"
                                                     className={`${
                                                         active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-te'
-                                                    } focus:outline-0 ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                    } focus:outline-none ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                     >
                                                     <Icon icon="uil:clock-three" /> Planning
                                                     </MyLink>
@@ -166,14 +166,14 @@ function SideBar() {
                             <Menu>
                                 {({open}) => (
                                     <>
-                                    <Switch checked={enabledTwo} onChange={setEnabledTwo} as={motion.div} whileHover={{ scale: 1.15, x: -10, y: -5 }} className={`${enabledTwo ? 'text-blue-400 dark:text-purple-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4 focus:outline-0`}>
-                                        Company <Icon icon="akar-icons:chevron-down"  className={`${enabledTwo ? 'rotate-180' : 'rotate-0'} focus:outline-0 transition-all duration-150 ease-in-out`}/>
+                                    <Switch checked={enabledTwo} onChange={setEnabledTwo} as={motion.div} whileHover={{ scale: 1.15, x: -10, y: -5 }} className={`${enabledTwo ? 'text-blue-400 dark:text-purple-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4 focus:outline-none`}>
+                                        Company <Icon icon="akar-icons:chevron-down"  className={`${enabledTwo ? 'rotate-180' : 'rotate-0'} focus:outline-none transition-all duration-150 ease-in-out`}/>
                                     </Switch>
                                     {enabledTwo && (
                                         <>
                                             <AnimatePresence>
                                                 <Menu.Items static 
-                                                    className="flex flex-col justify-center text-black h-[10rem] mt-2 focus:outline-0 w-44 dark:text-white"
+                                                    className="flex flex-col justify-center text-black h-[10rem] mt-2 focus:outline-none w-44 dark:text-white"
                                                     as={motion.div}
                                                     variants={variantsLinks}
                                                     initial="closed"
@@ -187,7 +187,7 @@ function SideBar() {
                                                         <MyLink href="#"
                                                             className={`${
                                                             active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                            } active:outline-0 ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                            } active:outline-none ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                         >
                                                             History
                                                         </MyLink>
@@ -199,7 +199,7 @@ function SideBar() {
                                                         <MyLink href="#"
                                                             className={`${
                                                             active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                            } focus:outline-0 ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                            } focus:outline-none ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                         >
                                                             Our Team
                                                         </MyLink>
@@ -211,7 +211,7 @@ function SideBar() {
                                                         <MyLink href="#"
                                                             className={`${
                                                             active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                            } focus:outline-0 ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                            } focus:outline-none ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                         >
                                                             Blog
                                                         </MyLink>
@@ -233,7 +233,7 @@ function SideBar() {
                 </ul>
 
                 <div className="absolute bottom-16 left-16 flex flex-col items-center justify-center gap-2">
-                    <motion.div className="cursor-pointer w-[170px] h-fit font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-center text-black dark:text-white"
+                    <motion.div className="cursor-pointer w-[170px] h-[50px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-center text-black dark:text-white"
                         whileTap={{ x: 0, scale: 0.5 }}
                     >
                         Login
