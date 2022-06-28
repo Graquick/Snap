@@ -76,18 +76,18 @@ function SideBar() {
                 <Icon icon={open ? "ei:close" : "clarity:bars-line"} className={open ? "text-[2.5rem]" : "text-[2rem]"} />
             </motion.div>
 
-            <motion.div className="bg-neutral-100/80 backdrop-blur-lg h-[850px] w-[90%] absolute top-0 -right-12  z-10 flex flex-col justify-center items-center text-black dark:bg-neutral-800/80 dark:text-white"
+            <motion.div className="bg-neutral-100/80 backdrop-blur-sm h-[850px] w-[90%] absolute top-0 -right-12  z-10 flex flex-col justify-center items-center text-black dark:bg-neutral-800/80 dark:text-white"
                 initial={false}
                 variants={variantsMenu}
                 animate={open ? "opened" : "closed"}
                 exit="closed"
             >
-                <ul className="absolute top-24 left-0 flex flex-col gap-8 items-start text-left w-[250px] h-[650px] text-xl pl-12">
+                <ul className="absolute top-32 left-0 flex flex-col gap-8 items-start text-left w-[250px] h-[650px] text-xl pl-12">
                             <li className="flex flex-col items-start cursor-pointer text-gray-500 font-semibold justify-between transition-all ease-in-out duration-300 relative dark:text-white">
                             <Menu>
                                 {({open}) => (
                                 <>
-                                    <Switch checked={enabled} onChange={setEnabled} as={motion.div} whileHover={{ scale: 1.15, x: -10, y: -5 }} className={`${enabled ? 'text-violet-400 dark:text-yellow-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4`}>
+                                    <Switch checked={enabled} onChange={setEnabled} className={`${enabled ? 'text-yellow-400' : 'text-white'} flex items-center justify-start gap-4`}>
                                     Features <Icon icon="akar-icons:chevron-down"  className={`${enabled ? 'rotate-180' : 'rotate-0'} transition-all duration-150 ease-in-out`}/>
                                     </Switch>
                                     {enabled && (
@@ -164,7 +164,7 @@ function SideBar() {
                             <Menu>
                                 {({open}) => (
                                     <>
-                                    <Switch checked={enabledTwo} onChange={setEnabledTwo} as={motion.div} whileHover={{ scale: 1.15, x: -10, y: -5 }} className={`${enabledTwo ? 'text-blue-400 dark:text-purple-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4`}>
+                                    <Switch checked={enabledTwo} onChange={setEnabledTwo} className={`${enabledTwo ? 'text-purple-400' : 'text-white'} flex items-center justify-start gap-4`}>
                                         Company <Icon icon="akar-icons:chevron-down"  className={`${enabledTwo ? 'rotate-180' : 'rotate-0'} transition-all duration-150 ease-in-out`}/>
                                     </Switch>
                                     {enabledTwo && (
@@ -226,23 +226,23 @@ function SideBar() {
                             </li>
 
 
-                            <li className="flex items-center justify-center font-semibold text-black transition-all duration-300 ease-in-out cursor-pointer w-fit dark:text-white">Careers</li>
-                            <li className="flex items-center justify-center font-semibold text-black transition-all duration-300 ease-in-out cursor-pointer w-fit dark:text-white">About</li>
+                            <li className="flex items-center justify-center font-semibold text-gray-500 transition-all duration-300 ease-in-out cursor-pointer w-fit dark:text-white">Careers</li>
+                            <li className="flex items-center justify-center font-semibold text-gray-500 transition-all duration-300 ease-in-out cursor-pointer w-fit dark:text-white">About</li>
                 </ul>
 
-                <div className="absolute bottom-4 left-16 flex flex-col items-center justify-center gap-2">
-                    <motion.div className="cursor-pointer w-[170px] h-[50px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-center text-black dark:text-white"
+                <div className="flex flex-col items-center justify-center gap-4">
+                    <motion.div className="cursor-pointer w-[170px] h-[55px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-black dark:text-white"
                         whileTap={{ x: 0, scale: 0.5 }}
                     >
                         Login
                     </motion.div>
 
-                    <motion.div className="cursor-pointer w-[170px] h-[55px] border border-black rounded-[15px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-center text-black hover:bg-black hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black transition-all duration-150 ease-out"
-                        whileTap={{ x: 0, scale: 0.5 }}
-                    >
-                        Register
-                    </motion.div>
-                </div>
+            <motion.div className="cursor-pointer w-[170px] h-[55px] border border-black rounded-[15px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-black hover:bg-black hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black transition-all duration-150 ease-out"
+                whileTap={{ x: 0, scale: 0.5 }}
+              >
+                Register
+              </motion.div>
+        </div>
             </motion.div>
         </AnimatePresence>
     </>

@@ -87,7 +87,7 @@ function SideBar() {
                             <Menu>
                                 {({open}) => (
                                 <>
-                                    <Switch checked={enabled} onChange={setEnabled} as={motion.div} whileHover={{ scale: 1.15, x: -10, y: -5 }} className={`${enabled ? 'text-violet-400 dark:text-yellow-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4`}>
+                                    <Switch checked={enabled} onChange={setEnabled} className={`${enabled ? 'text-violet-400 dark:text-yellow-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4`}>
                                     Features <Icon icon="akar-icons:chevron-down"  className={`${enabled ? 'rotate-180' : 'rotate-0'} transition-all duration-150 ease-in-out`}/>
                                     </Switch>
                                     {enabled && (
@@ -164,7 +164,7 @@ function SideBar() {
                             <Menu>
                                 {({open}) => (
                                     <>
-                                    <Switch checked={enabledTwo} onChange={setEnabledTwo} as={motion.div} whileHover={{ scale: 1.15, x: -10, y: -5 }} className={`${enabledTwo ? 'text-blue-400 dark:text-purple-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4`}>
+                                    <Switch checked={enabledTwo} onChange={setEnabledTwo} as={motion.div} whileHover={{ scale: 1.5 }} className={`${enabledTwo ? 'text-blue-400 dark:text-purple-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4`}>
                                         Company <Icon icon="akar-icons:chevron-down"  className={`${enabledTwo ? 'rotate-180' : 'rotate-0'} transition-all duration-150 ease-in-out`}/>
                                     </Switch>
                                     {enabledTwo && (
