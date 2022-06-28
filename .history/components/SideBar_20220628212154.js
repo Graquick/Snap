@@ -90,7 +90,7 @@ function SideBar() {
                                 {({open}) => (
                                 <>
                                     <Switch checked={enabled} onChange={setEnabled} as={motion.div} whileHover={{ scale: 1.15, x: -10, y: -5 }} className={`${enabled ? 'text-violet-400 dark:text-yellow-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4 focus:outline-none`}>
-                                    Features <Icon icon="akar-icons:chevron-down"  className={`${enabled ? 'rotate-180' : 'rotate-0'} focus:outline-none transition-all duration-150 ease-in-out`}/>
+                                    Features <Icon icon="akar-icons:chevron-down"  className={`${enabled ? 'rotate-180' : 'rotate-0'}  transition-all duration-150 ease-in-out`}/>
                                     </Switch>
                                     {enabled && (
                                     <>
@@ -187,7 +187,7 @@ function SideBar() {
                                                         <MyLink href="#"
                                                             className={`${
                                                             active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                            } focus:outline-none ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                            } ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                         >
                                                             History
                                                         </MyLink>
@@ -199,7 +199,7 @@ function SideBar() {
                                                         <MyLink href="#"
                                                             className={`${
                                                             active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                            } focus:outline-none ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                            } ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                         >
                                                             Our Team
                                                         </MyLink>
@@ -211,7 +211,7 @@ function SideBar() {
                                                         <MyLink href="#"
                                                             className={`${
                                                             active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                            } focus:outline-none ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                            } ml-8 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                         >
                                                             Blog
                                                         </MyLink>
