@@ -20,9 +20,9 @@ const MyLink = forwardRef((props, ref) => {
         </a>
       </Link>
     )
-})
+  })
 
-MyLink.displayName = 'MyLink';
+  MyLink.displayName = 'MyLink';
 
 function SideBar() {
     const [open, setOpen] = useState(false)
