@@ -134,7 +134,7 @@ function SideBar() {
                                                     <MyLink href="#"
                                                     className={`${
                                                         active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                    } focus:outline-none pl-12 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                    } bg-red-500 focus:outline-none pl-12 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                     >
                                                     <Icon icon="uil:lightbulb-alt" /> Reminders
                                                     </MyLink>

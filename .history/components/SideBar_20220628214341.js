@@ -96,7 +96,7 @@ function SideBar() {
                                     <>
                                         <AnimatePresence>
                                             <Menu.Items static 
-                                            className="flex flex-col justify-center text-black h-[13rem] focus:outline-none w-56 mt-2 dark:text-white"
+                                            className="flex flex-col justify-center text-black h-[13rem] focus:outline-none w-56 mt-2 bg-green-200 dark:text-white"
                                             as={motion.div}
                                             variants={variantsLinks}
                                             initial="closed"
@@ -134,7 +134,7 @@ function SideBar() {
                                                     <MyLink href="#"
                                                     className={`${
                                                         active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                    } focus:outline-none pl-12 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                    } bg-red-500 focus:outline-none pl-12 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
                                                     >
                                                     <Icon icon="uil:lightbulb-alt" /> Reminders
                                                     </MyLink>
@@ -173,7 +173,7 @@ function SideBar() {
                                         <>
                                             <AnimatePresence>
                                                 <Menu.Items static 
-                                                    className="flex flex-col justify-center text-black h-[10rem] mt-2 focus:outline-none w-56 dark:text-white"
+                                                    className="flex flex-col justify-center text-black h-[10rem] mt-2 focus:outline-none w-56 bg-green-100 dark:text-white"
                                                     as={motion.div}
                                                     variants={variantsLinks}
                                                     initial="closed"
