@@ -38,14 +38,14 @@ function SideBar() {
     <>  
 
         <AnimatePresence>
-            <motion.div className="absolute top-[1.5rem] right-[1rem] z-20 text-black cursor-pointer dark:text-white" onClick={() => setOpen(state => !state)}
+            <motion.div className="absolute top-[1.5rem] right-[1rem] z-20 text-black cursor-pointer dark:" onClick={() => setOpen(state => !state)}
                 variants={variantsIcon}
                 animate={open ? "opened" : "closed"}
                 exit="closed"
             >
                 <Icon icon={open ? "ei:close" : "clarity:bars-line"} className={open ? "text-[2.5rem]" : "text-[2rem]"} />
             </motion.div>
-            <motion.div className="bg-neutral-100/80 backdrop-blur-sm h-[850px] w-[90%] absolute top-0 -right-12  z-10 flex flex-col justify-center items-center text-black dark:bg-neutral-800/80 dark:text-white"
+            <motion.div className="bg-neutral-100/80 backdrop-blur-sm h-[820px] w-[90%] absolute top-0 -right-12  z-10 flex flex-col justify-center items-center text-white"
                 initial={false}
                 variants={variantsMenu}
                 animate={open ? "opened" : "closed"}

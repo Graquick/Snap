@@ -50,7 +50,7 @@ function Header() {
 
   return mounted && (
     <>
-      <header className="flex w-full mx-auto justify-between sticky top-0 z-10 bg-neutral-100 h-28 items-center lg:h-24 lg:px-4 dark:bg-neutral-800">
+      <header className="flex w-full mx-auto justify-between sticky top-0 z-10 bg-neutral-100 h-28 items-center lg:h-24 lg:px-4 dark:bg-neutral-80">
         <div className="flex w-[850px] justify-between items-center 2xl:w-[750px] xl:w-[600px]">
             <div className="font-[Arial, Helvetica, sans-serif] text-[4rem] font-bold text-black cursor-default transition-all w-fit duration-150 ease-in-out relative group dark:text-white lg:text-[3rem]"> 
             <svg

@@ -23,7 +23,7 @@ export default function Home() {
       
 
       <main className="flex flex-col items-center justify-center w-full min-h-screen">
-        <div className="flex flex-col w-[1440px] h-[924px] justify-between items-center 2xl:w-[1000px] xl:w-[750px] xl:h-[624px] lg:w-[375px] lg:h-[850px]">
+        <div className="flex flex-col w-[1440px] h-[924px] justify-between items-center 2xl:w-[1000px] xl:w-[750px] xl:h-[624px] lg:w-[375px] lg:h-[840px] bgfreen">
 
             <Header />
             <div className="flex w-[95%] h-[75%] lg:h-full lg:flex-col lg:items-center lg:w-full lg:mt-8">

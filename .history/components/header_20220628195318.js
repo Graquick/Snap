@@ -50,11 +50,11 @@ function Header() {
 
   return mounted && (
     <>
-      <header className="flex w-full mx-auto justify-between sticky top-0 z-10 bg-neutral-100 h-28 items-center lg:h-24 lg:px-4 dark:bg-neutral-800">
+      <header className="flex w-full mx-auto justify-between sticky top-0 z-10 bg-neutral-100 h-28 items-center lg:h-24 lg:px-4 dark:bg-neutral-80">
         <div className="flex w-[850px] justify-between items-center 2xl:w-[750px] xl:w-[600px]">
             <div className="font-[Arial, Helvetica, sans-serif] text-[4rem] font-bold text-black cursor-default transition-all w-fit duration-150 ease-in-out relative group dark:text-white lg:text-[3rem]"> 
             <svg
-              className="absolute top-[2.5rem] -right-8 w-[26px] h-[26px] transition-all duration-500 ease-in-out lg:top-[2rem]"
+              className="absolute top-[2.5rem] -right-8 w-[26px] h-[26px] transition-all duration-500 ease-in-out lg:"
               width={26}
               height={24}
               viewBox="0 0 26 24"
@@ -74,6 +74,34 @@ function Header() {
               />
               <circle cx={13} cy={7} r="2.5" className="stroke-white fill-black dark:stroke-black/50 dark:fill-white"/>
             </svg>
+            
+            {/* // Mobile // */}
+            {/* <svg
+              width={23}
+              height={22}
+              viewBox="0 0 23 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="absolute top-[2.1rem] -right-8 w-[22.6px] h-[21.6px] transition-all duration-500 ease-in-out hidden lg:block"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M6.8 5H20.8C21.2418 5 21.6 5.35817 21.6 5.8V19.8C21.6 20.2418 21.2418 20.6 20.8 20.6H6.8C6.35817 20.6 6 20.2418 6 19.8V5.8C6 5.35817 6.35817 5 6.8 5Z"
+                fill="white"
+                stroke="black"
+                strokeWidth={2}
+              />
+              <path
+                d="M15.8 0H1.8C0.805887 0 0 0.805887 0 1.8V15.8C0 16.7941 0.805887 17.6 1.8 17.6H15.8C16.7941 17.6 17.6 16.7941 17.6 15.8V1.8C17.6 0.805887 16.7941 0 15.8 0Z"
+                fill="black"
+              />
+              <path
+                d="M13.8 5.79999C13.8 6.90456 12.9046 7.79999 11.8 7.79999C10.6954 7.79999 9.79999 6.90456 9.79999 5.79999C9.79999 4.69542 10.6954 3.79999 11.8 3.79999C12.9046 3.79999 13.8 4.69542 13.8 5.79999Z"
+                fill="black"
+                stroke="white"
+              />
+            </svg> */}
+            {/* // Mobile // */}
 
             snap
             </div>
