@@ -173,59 +173,60 @@ function SideBar() {
                                     <Switch checked={enabledTwo} onChange={setEnabledTwo} as={motion.div} whileHover={{ scale: 1.15, x: -10, y: -5 }} className={`${enabledTwo ? 'text-blue-400 dark:text-purple-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4 focus:outline-none`}>
                                         Company <Icon icon="akar-icons:chevron-down"  className={`${enabledTwo ? 'rotate-180' : 'rotate-0'} focus:outline-none transition-all duration-150 ease-in-out`}/>
                                     </Switch>
-                                    <AnimatePresence exitBeforeEnter>
-                                        {enabledTwo && (
-                                            <>
-                                                <Menu.Items static 
-                                                    className="flex flex-col justify-center text-black h-[10rem] mt-2 focus:outline-none w-56 dark:text-white"
-                                                    as={motion.div}
-                                                    variants={variantsLinks}
-                                                    initial="closed"
-                                                    animate="opened"
-                                                    exit="exit"
-                                                    transition={spring}
-                                                    
-                                                >
-                                                    <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring} >
-                                                        {({ active }) => (
-                                                        <MyLink href="#"
-                                                            className={`${
-                                                            active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                            } pl-12 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
-                                                        >
-                                                            History
-                                                        </MyLink>
-                                                        )}
-                                                    </Menu.Item>
-                                                    
-                                                    <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring} >
-                                                        {({ active }) => (
-                                                        <MyLink href="#"
-                                                            className={`${
-                                                            active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                            } focus:outline-none pl-12 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
-                                                        >
-                                                            Our Team
-                                                        </MyLink>
-                                                        )}
-                                                    </Menu.Item>
-                                                    
-                                                    <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring} >
-                                                        {({ active }) => (
-                                                        <MyLink href="#"
-                                                            className={`${
-                                                            active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
-                                                            } focus:outline-none pl-12 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
-                                                        >
-                                                            Blog
-                                                        </MyLink>
-                                                        )}
-                                                    </Menu.Item>
-                                                    
-                                                </Menu.Items>
-                                            </>
-                                        )}
+                                    <AnimatePresence>
+                                        
                                     </AnimatePresence>
+                                    {enabledTwo && (
+                                        <>
+                                            <Menu.Items static 
+                                                className="flex flex-col justify-center text-black h-[10rem] mt-2 focus:outline-none w-56 dark:text-white"
+                                                as={motion.div}
+                                                variants={variantsLinks}
+                                                initial="closed"
+                                                animate="opened"
+                                                exit="exit"
+                                                transition={spring}
+                                                
+                                            >
+                                                <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring} >
+                                                    {({ active }) => (
+                                                    <MyLink href="#"
+                                                        className={`${
+                                                        active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
+                                                        } pl-12 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                    >
+                                                        History
+                                                    </MyLink>
+                                                    )}
+                                                </Menu.Item>
+                                                
+                                                <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring} >
+                                                    {({ active }) => (
+                                                    <MyLink href="#"
+                                                        className={`${
+                                                        active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
+                                                        } focus:outline-none pl-12 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                    >
+                                                        Our Team
+                                                    </MyLink>
+                                                    )}
+                                                </Menu.Item>
+                                                
+                                                <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring} >
+                                                    {({ active }) => (
+                                                    <MyLink href="#"
+                                                        className={`${
+                                                        active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-white'
+                                                        } focus:outline-none pl-12 whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full`}
+                                                    >
+                                                        Blog
+                                                    </MyLink>
+                                                    )}
+                                                </Menu.Item>
+                                                
+                                            </Menu.Items>
+                                        </>
+                                    )}
                                     </>
                                 )}
                             </Menu>
@@ -236,7 +237,7 @@ function SideBar() {
                             <li className="flex items-center justify-center font-semibold text-black transition-all duration-300 ease-in-out cursor-pointer w-fit dark:text-white">About</li>
                 </ul>
 
-                <div className="absolute bottom-16 left-16 flex flex-col items-center justify-center gap-4">
+                <div className="absolute bottom-16 left-16 flex flex-col items-center justify-center gap-2">
                     <motion.div className="cursor-pointer w-[170px] h-fit font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-center text-black dark:text-white"
                         whileTap={{ x: 0, scale: 0.5 }}
                     >

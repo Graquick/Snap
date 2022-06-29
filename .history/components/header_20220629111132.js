@@ -96,8 +96,8 @@ function Header() {
                                   className="absolute left-0 z-10 flex flex-col justify-center bg-white text-black h-[13.25rem] focus:outline-none w-44 top-12 dark:border-neutral-500 2xl:w-32 2xl:h-36 2xl:gap-2 xl:w-24"
                                   as={motion.div}
                                   initial={{ y: 100}}
-                                  animate={{ y: 0}}
-                                  exit={{ y: 100, opacity: 0 }}
+                                  animate={{ y: 0}},
+                                  exit={{ y: 100, opacity: 0 }},
                                   transition={spring}
                                   
                                 >

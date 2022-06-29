@@ -8,7 +8,7 @@ import { Icon } from '@iconify/react';
 
 import Header from '../components/header.js'
 import useMounted from '../components/useMounted.js'
-import Loader from '../components/Loader.js'
+import useMounted from '../components/useMounted.js'
 
 export default function Home() {
   const mounted = useMounted()
@@ -141,6 +141,7 @@ export default function Home() {
               {/* // Mobile */}
             </div>
         </div>
+        <Loader />
       </main>
     </div>
   )

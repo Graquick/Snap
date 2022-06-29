@@ -97,7 +97,6 @@ function Header() {
                                   as={motion.div}
                                   initial={{ y: 100}}
                                   animate={{ y: 0}}
-                                  exit={{ y: 100, opacity: 0 }}
                                   transition={spring}
                                   
                                 >

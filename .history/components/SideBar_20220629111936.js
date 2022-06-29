@@ -236,7 +236,7 @@ function SideBar() {
                             <li className="flex items-center justify-center font-semibold text-black transition-all duration-300 ease-in-out cursor-pointer w-fit dark:text-white">About</li>
                 </ul>
 
-                <div className="absolute bottom-16 left-16 flex flex-col items-center justify-center gap-4">
+                <div className="absolute bottom-16 left-16 flex flex-col items-center justify-center gap-2">
                     <motion.div className="cursor-pointer w-[170px] h-fit font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-center text-black dark:text-white"
                         whileTap={{ x: 0, scale: 0.5 }}
                     >

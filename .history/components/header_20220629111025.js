@@ -89,69 +89,67 @@ function Header() {
                         <Switch checked={enabled} onChange={setEnabled} className="flex items-center justify-center gap-2 xl:gap-1">
                           Features <Icon icon="akar-icons:chevron-down"  className={`${enabled ? 'rotate-180' : 'rotate-0'} transition-all duration-150 ease-in-out 2xl:text-sm xl:text-xs`}/>
                         </Switch>
-                        <AnimatePresence ExitBeforeEnter>
-                            {enabled && (
-                              <>
-                                <Menu.Items static 
-                                  className="absolute left-0 z-10 flex flex-col justify-center bg-white text-black h-[13.25rem] focus:outline-none w-44 top-12 dark:border-neutral-500 2xl:w-32 2xl:h-36 2xl:gap-2 xl:w-24"
-                                  as={motion.div}
-                                  initial={{ y: 100}}
-                                  animate={{ y: 0}}
-                                  exit={{ y: 100, opacity: 0 }}
-                                  transition={spring}
-                                  
-                                >
-                                  <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring}>
-                                      {({ active }) => (
-                                        <MyLink href="#"
-                                          className={`${
-                                            active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
-                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[.85rem] 2xl:gap-1 2xl:py-0 2xl:px-1  xl:text-[.7rem]`}
-                                        >
-                                          <Icon icon="uil:clipboard-notes" className="text-xl xl:text-sm" /> Features
-                                        </MyLink>
-                                      )}
-                                  </Menu.Item>
-                                  
-                                  <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring}>
-                                      {({ active }) => (
-                                        <MyLink href="#"
-                                          className={`${
-                                            active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
-                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full  2xl:text-[.85rem] 2xl:gap-1 2xl:py-0 2xl:px-1  xl:text-[.7rem]`}
-                                        >
-                                          <Icon icon="uil:calendar-alt" className="text-xl xl:text-sm" /> Calendar
-                                        </MyLink>
-                                      )}
-                                  </Menu.Item>
-                                  
-                                  <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring}>
-                                      {({ active }) => (
-                                        <MyLink href="#"
-                                          className={`${
-                                            active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
-                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[.85rem] 2xl:gap-1 2xl:py-0 2xl:px-1  xl:text-[.7rem]`}
-                                        >
-                                          <Icon icon="uil:lightbulb-alt" className="text-xl xl:text-sm" /> Reminders
-                                        </MyLink>
-                                      )}
-                                  </Menu.Item>
-                                  
-                                  <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring}>
-                                      {({ active }) => (
-                                        <MyLink href="#"
-                                          className={`${
-                                            active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
-                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[.85rem] 2xl:gap-1 2xl:py-0 2xl:px-1  xl:text-[.7rem]`}
-                                        >
-                                          <Icon icon="uil:clock-three" className="text-xl xl:text-sm" /> Planning
-                                        </MyLink>
-                                      )}
-                                  </Menu.Item>
-                                </Menu.Items> 
-                              </>
-                            )}
-                        </AnimatePresence>
+                        AnimatePresence>
+                        {enabled && (
+                          <>
+                            <Menu.Items static 
+                              className="absolute left-0 z-10 flex flex-col justify-center bg-white text-black h-[13.25rem] focus:outline-none w-44 top-12 dark:border-neutral-500 2xl:w-32 2xl:h-36 2xl:gap-2 xl:w-24"
+                              as={motion.div}
+                              initial={{ y: 100}}
+                              animate={{ y: 0}}
+                              transition={spring}
+                              
+                            >
+                              <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring}>
+                                  {({ active }) => (
+                                    <MyLink href="#"
+                                      className={`${
+                                        active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
+                                      } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[.85rem] 2xl:gap-1 2xl:py-0 2xl:px-1  xl:text-[.7rem]`}
+                                    >
+                                      <Icon icon="uil:clipboard-notes" className="text-xl xl:text-sm" /> Features
+                                    </MyLink>
+                                  )}
+                              </Menu.Item>
+                              
+                              <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring}>
+                                  {({ active }) => (
+                                    <MyLink href="#"
+                                      className={`${
+                                        active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
+                                      } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full  2xl:text-[.85rem] 2xl:gap-1 2xl:py-0 2xl:px-1  xl:text-[.7rem]`}
+                                    >
+                                      <Icon icon="uil:calendar-alt" className="text-xl xl:text-sm" /> Calendar
+                                    </MyLink>
+                                  )}
+                              </Menu.Item>
+                              
+                              <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring}>
+                                  {({ active }) => (
+                                    <MyLink href="#"
+                                      className={`${
+                                        active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
+                                      } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[.85rem] 2xl:gap-1 2xl:py-0 2xl:px-1  xl:text-[.7rem]`}
+                                    >
+                                      <Icon icon="uil:lightbulb-alt" className="text-xl xl:text-sm" /> Reminders
+                                    </MyLink>
+                                  )}
+                              </Menu.Item>
+                              
+                              <Menu.Item as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: .9}} transition={spring}>
+                                  {({ active }) => (
+                                    <MyLink href="#"
+                                      className={`${
+                                        active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
+                                      } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[.85rem] 2xl:gap-1 2xl:py-0 2xl:px-1  xl:text-[.7rem]`}
+                                    >
+                                      <Icon icon="uil:clock-three" className="text-xl xl:text-sm" /> Planning
+                                    </MyLink>
+                                  )}
+                              </Menu.Item>
+                            </Menu.Items> 
+                          </>
+                        )}
                       </>
                     )}
                   </Menu>

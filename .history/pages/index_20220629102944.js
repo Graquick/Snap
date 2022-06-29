@@ -141,6 +141,8 @@ export default function Home() {
               {/* // Mobile */}
             </div>
         </div>
+        <Loader />
+        <Loader />
       </main>
     </div>
   )

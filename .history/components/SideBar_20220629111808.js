@@ -105,7 +105,7 @@ function SideBar() {
                                                 variants={variantsLinks}
                                                 initial="closed"
                                                 animate="opened"
-                                                exit="exit"
+                                                exit="closed"
                                                 transition={spring}
                                                 
                                                 >
@@ -173,16 +173,16 @@ function SideBar() {
                                     <Switch checked={enabledTwo} onChange={setEnabledTwo} as={motion.div} whileHover={{ scale: 1.15, x: -10, y: -5 }} className={`${enabledTwo ? 'text-blue-400 dark:text-purple-400' : 'text-black dark:text-white'} flex items-center justify-start gap-4 focus:outline-none`}>
                                         Company <Icon icon="akar-icons:chevron-down"  className={`${enabledTwo ? 'rotate-180' : 'rotate-0'} focus:outline-none transition-all duration-150 ease-in-out`}/>
                                     </Switch>
-                                    <AnimatePresence exitBeforeEnter>
-                                        {enabledTwo && (
-                                            <>
+                                    {enabledTwo && (
+                                        <>
+                                            <AnimatePresence>
                                                 <Menu.Items static 
                                                     className="flex flex-col justify-center text-black h-[10rem] mt-2 focus:outline-none w-56 dark:text-white"
                                                     as={motion.div}
                                                     variants={variantsLinks}
                                                     initial="closed"
                                                     animate="opened"
-                                                    exit="exit"
+                                                    exit="closed"
                                                     transition={spring}
                                                     
                                                 >
@@ -222,10 +222,10 @@ function SideBar() {
                                                         )}
                                                     </Menu.Item>
                                                     
-                                                </Menu.Items>
-                                            </>
-                                        )}
-                                    </AnimatePresence>
+                                                </Menu.Items> 
+                                            </AnimatePresence>
+                                        </>
+                                    )}
                                     </>
                                 )}
                             </Menu>
@@ -236,7 +236,7 @@ function SideBar() {
                             <li className="flex items-center justify-center font-semibold text-black transition-all duration-300 ease-in-out cursor-pointer w-fit dark:text-white">About</li>
                 </ul>
 
-                <div className="absolute bottom-16 left-16 flex flex-col items-center justify-center gap-4">
+                <div className="absolute bottom-16 left-16 flex flex-col items-center justify-center gap-2">
                     <motion.div className="cursor-pointer w-[170px] h-fit font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-center text-black dark:text-white"
                         whileTap={{ x: 0, scale: 0.5 }}
                     >

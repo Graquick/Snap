@@ -39,6 +39,7 @@ export default function Home() {
                   >
                     Learn more
                   </motion.div>
+                  <Loader />
                 </div>
                 <div className="flex gap-12 xl:absolute xl:bottom-[.5rem] xl:left-56 lg:hidden">
 

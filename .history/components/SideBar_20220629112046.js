@@ -66,7 +66,8 @@ function SideBar() {
         },
         exit: {
             y: 100,
-            opacity: 0
+            opacity: 0,
+            
         }
     }
 

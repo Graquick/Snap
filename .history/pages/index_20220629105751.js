@@ -13,6 +13,28 @@ import Loader from '../components/Loader.js'
 export default function Home() {
   const mounted = useMounted()
 
+  const svgVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1
+    }
+  }
+
+  const pathVariants = {
+    hidden: {
+      opacity: 0,
+      pathLength: 0
+    },
+    visible: {
+      opacity: 1,
+      pathLength: 1,
+      transition: {
+        duration: 4,
+        ease: "easeInOut"
+      }
+    }
+  }
+
   return mounted && (
     <div className="px-8 py-0 lg:p-0 lg:overflow-hidden bg-neutral-100 dark:bg-neutral-800">
       <Head>
