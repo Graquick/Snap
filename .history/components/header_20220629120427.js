@@ -78,7 +78,7 @@ function Header() {
             snap
             </div>
 
-            <div className="w-[600px] 2xl:w-[500px] xl:w-[380px] lg:hidden">
+            <div className="w-[600px] 2xl:w-[500px] xl:w-[380px] lg:hidden bg-blue-400">
               <ul className="flex justify-between w-full text-xl 2xl:text-[1.125rem] xl:text-[.8rem]">
 
 

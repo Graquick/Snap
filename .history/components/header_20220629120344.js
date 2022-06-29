@@ -78,7 +78,7 @@ function Header() {
             snap
             </div>
 
-            <div className="w-[600px] 2xl:w-[500px] xl:w-[380px] lg:hidden">
+            <div className="w-[600px] 2xl:w-[500px] xl:w-[380px] lg:hidden bg-blue-400">
               <ul className="flex justify-between w-full text-xl 2xl:text-[1.125rem] xl:text-[.8rem]">
 
 
@@ -237,7 +237,7 @@ function Header() {
                 Login
               </motion.div>
 
-            <motion.div className="cursor-pointer w-[170px] h-[55px] border border-black rounded-[15px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-black hover:bg-black hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black transition-all duration-150 ease-out 2xl:w-28 2xl:text-sm 2xl:h-12 xl:rounded-[10px] xl:w-[4rem] xl:text-[.6rem] xl:h-[1.95rem]"
+            <motion.div className="cursor-pointer w-[170px] h-[55px] border border-black rounded-[15px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-black hover:bg-black hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black transition-all duration-150 ease-out 2xl:w-24 2xl:text-sm 2xl:h-12 xl:rounded-[10px] xl:w-[4rem] xl:text-[.6rem] xl:h-[1.95rem]"
                 whileTap={{ x: 0, scale: 0.5 }}
               >
                 Register

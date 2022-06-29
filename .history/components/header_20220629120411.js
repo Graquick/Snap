@@ -78,7 +78,7 @@ function Header() {
             snap
             </div>
 
-            <div className="w-[600px] 2xl:w-[500px] xl:w-[380px] lg:hidden">
+            <div className="w-[600px] 2xl:w-[500px] xl:w-[380px] lg:hidden bg-blue-400">
               <ul className="flex justify-between w-full text-xl 2xl:text-[1.125rem] xl:text-[.8rem]">
 
 
@@ -230,7 +230,7 @@ function Header() {
         </div>
 
 
-        <div className="flex items-center justify-center gap-4 h-2/4 2xl:w-[20%] xl:w-[15%] lg:hidden">
+        <div className="flex items-center justify-center gap-4 h-2/4 2xl:w-[20%] bg-blue-400 xl:w-[15%] lg:hidden">
             <motion.div className="cursor-pointer w-[170px] h-[55px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-black dark:text-white 2xl:w-16 2xl:text-sm 2xl:h-12 xl:w-4 xl:text-[.6rem] xl:h-4"
                 whileTap={{ x: 0, scale: 0.5 }}
               >

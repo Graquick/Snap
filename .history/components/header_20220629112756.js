@@ -78,22 +78,22 @@ function Header() {
             snap
             </div>
 
-            <div className="w-[600px] 2xl:w-[500px] xl:w-[380px] lg:hidden">
-              <ul className="flex justify-between w-full text-xl 2xl:text-[1.125rem] xl:text-[.8rem]">
+            <div className="w-[600px] 2xl:w-[500px] xl:w-[360px] lg:hidden ">
+              <ul className="flex justify-between w-full text-xl 2xl:text-[1rem] xl:text-[.75rem]">
 
 
                 <li className="flex items-center cursor-pointer text-gray-500 font-semibold justify-between w-[20%] transition-all ease-in-out duration-300 relative dark:text-white 2xl:w-[15%] xl:w-[10%]">
                   <Menu>
                     {({open}) => (
                       <>
-                        <Switch checked={enabled} onChange={setEnabled} className="flex items-center justify-center gap-2">
-                          Features <Icon icon="akar-icons:chevron-down"  className={`${enabled ? 'rotate-180' : 'rotate-0'} transition-all duration-150 ease-in-out`}/>
+                        <Switch checked={enabled} onChange={setEnabled} className="flex items-center justify-center gap-2 xl:gap-1">
+                          Features <Icon icon="akar-icons:chevron-down"  className={`${enabled ? 'rotate-180' : 'rotate-0'} transition-all duration-150 ease-in-out 2xl:text-sm xl:text-xs`}/>
                         </Switch>
                         <AnimatePresence ExitBeforeEnter>
                             {enabled && (
                               <>
                                 <Menu.Items static 
-                                  className="absolute left-0 z-10 flex flex-col justify-center bg-white text-black h-fit focus:outline-none w-44 top-12 dark:border-neutral-500 2xl:w-36 2xl:gap-2 xl:top-[2.5rem] xl:-left-[1rem] xl:w-28"
+                                  className="absolute left-0 z-10 flex flex-col justify-center bg-white text-black h-[13.25rem] focus:outline-none w-44 top-12 dark:border-neutral-500 2xl:w-36 2xl:h-52 2xl:gap-2 xl:w-24"
                                   as={motion.div}
                                   initial={{ y: 100}}
                                   animate={{ y: 0}}
@@ -106,9 +106,9 @@ function Header() {
                                         <MyLink href="#"
                                           className={`${
                                             active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
-                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[1.1rem] 2xl:h-12 2xl:gap-2 2xl:py-0 2xl:px-4 xl:h-[2.25rem] xl:text-[.7rem]`}
+                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[1.1rem] 2xl:gap-2 2xl:py-0 2xl:px-4  xl:text-[.7rem]`}
                                         >
-                                          <Icon icon="uil:clipboard-notes" className="text-xl xl:text-[1rem]" /> Features
+                                          <Icon icon="uil:clipboard-notes" className="text-xl xl:text-sm" /> Features
                                         </MyLink>
                                       )}
                                   </Menu.Item>
@@ -118,9 +118,9 @@ function Header() {
                                         <MyLink href="#"
                                           className={`${
                                             active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
-                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full  2xl:text-[1.1rem] 2xl:h-12 2xl:gap-2 2xl:py-0 2xl:px-4 xl:h-[2.25rem] xl:text-[.7rem]`}
+                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full  2xl:text-[1.1rem] 2xl:h-12 2xl:gap-2 2xl:py-0 2xl:px-4  xl:text-[.7rem]`}
                                         >
-                                          <Icon icon="uil:calendar-alt" className="text-xl xl:text-[1rem]" /> Calendar
+                                          <Icon icon="uil:calendar-alt" className="text-xl xl:text-sm" /> Calendar
                                         </MyLink>
                                       )}
                                   </Menu.Item>
@@ -130,9 +130,9 @@ function Header() {
                                         <MyLink href="#"
                                           className={`${
                                             active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
-                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[1.1rem] 2xl:h-12 2xl:gap-2 2xl:py-0 2xl:px-4 xl:h-[2.25rem] xl:text-[.7rem]`}
+                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[1.1rem] 2xl:gap-2 2xl:py-0 2xl:px-4  xl:text-[.7rem]`}
                                         >
-                                          <Icon icon="uil:lightbulb-alt" className="text-xl xl:text-[1rem]" /> Reminders
+                                          <Icon icon="uil:lightbulb-alt" className="text-xl xl:text-sm" /> Reminders
                                         </MyLink>
                                       )}
                                   </Menu.Item>
@@ -142,9 +142,9 @@ function Header() {
                                         <MyLink href="#"
                                           className={`${
                                             active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
-                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[1.1rem] 2xl:h-12 2xl:gap-2 2xl:py-0 2xl:px-4 xl:h-[2.25rem] xl:text-[.7rem]`}
+                                          } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[1.1rem] 2xl:gap-2 2xl:py-0 2xl:px-4  xl:text-[.7rem]`}
                                         >
-                                          <Icon icon="uil:clock-three" className="text-xl xl:text-[1rem]" /> Planning
+                                          <Icon icon="uil:clock-three" className="text-xl xl:text-sm" /> Planning
                                         </MyLink>
                                       )}
                                   </Menu.Item>
@@ -163,13 +163,13 @@ function Header() {
                       {({open}) => (
                         <>
                           <Switch checked={enabledTwo} onChange={setEnabledTwo} className="flex items-center justify-center gap-2">
-                            Company <Icon icon="akar-icons:chevron-down"  className={`${enabledTwo ? 'rotate-180' : 'rotate-0'} transition-all duration-150 ease-in-out`}/>
+                            Company <Icon icon="akar-icons:chevron-down"  className={`${enabledTwo ? 'rotate-180' : 'rotate-0'} transition-all duration-150 ease-in-out 2xl:text-sm xl:text-xs`}/>
                           </Switch>
                           <AnimatePresence exitBeforeEnter>
                               {enabledTwo && (
                                   <>
                                       <Menu.Items static 
-                                        className="absolute left-0 z-10 flex flex-col justify-center bg-white text-black h-fit focus:outline-none w-44 top-12 dark:border-neutral-500 2xl:w-36 xl:top-[2.5rem] xl:w-24"
+                                        className="absolute left-0 z-10 flex flex-col justify-center bg-white text-black h-[10.025rem] focus:outline-none w-44 top-12 dark:border-neutral-500 2xl:w-24 xl:w-20 2xl:h-[6.5rem] xl:h-24"
                                         as={motion.div}
                                         initial={{ y: 100}}
                                         animate={{ y: 0}}
@@ -182,7 +182,7 @@ function Header() {
                                               <MyLink href="#"
                                                 className={`${
                                                   active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
-                                                } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[1.1rem] 2xl:h-12 2xl:py-0 2xl:px-4 xl:h-[2.25rem] xl:text-[.7rem]`}
+                                                } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-md 2xl:gap-1 2xl:py-0 2xl:px-1  xl:text-[.7rem]`}
                                               >
                                                 History
                                               </MyLink>
@@ -194,7 +194,7 @@ function Header() {
                                               <MyLink href="#"
                                                 className={`${
                                                   active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
-                                                } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[1.1rem] 2xl:h-12 2xl:py-0 2xl:px-4 xl:h-[2.25rem] xl:text-[.7rem]`}
+                                                } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-md 2xl:gap-1 2xl:py-0 2xl:px-1  xl:text-[.7rem]`}
                                               >
                                                 Our Team
                                               </MyLink>
@@ -206,7 +206,7 @@ function Header() {
                                               <MyLink href="#"
                                                 className={`${
                                                   active ? 'bg-neutral-200 dark:bg-neutral-500' : 'dark:text-black'
-                                                } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-[1.1rem] 2xl:h-12 2xl:py-0 2xl:px-4 xl:h-[2.25rem] xl:text-[.7rem]`}
+                                                } whitespace-nowrap py-3 px-5 flex gap-3 justify-start items-center w-full 2xl:text-md 2xl:gap-1 2xl:py-0 2xl:px-1  xl:text-[.7rem]`}
                                               >
                                                 Blog
                                               </MyLink>
@@ -223,21 +223,21 @@ function Header() {
                 </li>
 
 
-                <li className="flex items-center justify-center font-semibold text-gray-500 transition-all duration-300 ease-in-out cursor-pointer w-fit dark:text-white 2xl:relative 2xl:left-3">Careers</li>
+                <li className="flex items-center justify-center font-semibold text-gray-500 transition-all duration-300 ease-in-out cursor-pointer w-fit dark:text-white">Careers</li>
                 <li className="flex items-center justify-center font-semibold text-gray-500 transition-all duration-300 ease-in-out cursor-pointer w-fit dark:text-white">About</li>
               </ul>
             </div>
         </div>
 
 
-        <div className="flex items-center justify-center gap-4 h-2/4 2xl:w-[20%] xl:w-[15%] lg:hidden">
-            <motion.div className="cursor-pointer w-[170px] h-[55px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-black dark:text-white 2xl:w-16 2xl:text-sm 2xl:h-12 xl:w-4 xl:text-[.6rem] xl:h-4"
+        <div className="flex items-center justify-center gap-4 2xl:w-[16%] xl:w-[12%] lg:hidden">
+            <motion.div className="cursor-pointer w-[170px] h-[55px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-black dark:text-white 2xl:w-16 2xl:text-sm 2xl:h-12 xl:w-4 xl:text-[.5rem] xl:h-4"
                 whileTap={{ x: 0, scale: 0.5 }}
               >
                 Login
               </motion.div>
 
-            <motion.div className="cursor-pointer w-[170px] h-[55px] border border-black rounded-[15px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-black hover:bg-black hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black transition-all duration-150 ease-out 2xl:w-28 2xl:text-sm 2xl:h-12 xl:rounded-[10px] xl:w-[4rem] xl:text-[.6rem] xl:h-[1.95rem]"
+            <motion.div className="cursor-pointer w-[170px] h-[55px] border border-black rounded-[15px] font-epilogue text-[18px] font-semibold no-underline flex items-center justify-center text-black hover:bg-black hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black transition-all duration-150 ease-out 2xl:w-24 2xl:text-sm 2xl:h-12 xl:w-[2.95rem] xl:text-[.5rem] xl:h-[1.95rem]"
                 whileTap={{ x: 0, scale: 0.5 }}
               >
                 Register
