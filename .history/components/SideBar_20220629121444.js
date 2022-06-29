@@ -68,7 +68,7 @@ function SideBar() {
             y: 100,
             opacity: 0,
             transition: {
-                duration: .15
+                duration: 
             }
         }
     }

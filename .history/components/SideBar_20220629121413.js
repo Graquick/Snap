@@ -65,11 +65,7 @@ function SideBar() {
             }
         },
         exit: {
-            y: 100,
-            opacity: 0,
-            transition: {
-                duration: .15
-            }
+            opacity: 0
         }
     }
 

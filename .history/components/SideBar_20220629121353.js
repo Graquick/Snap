@@ -66,10 +66,7 @@ function SideBar() {
         },
         exit: {
             y: 100,
-            opacity: 0,
-            transition: {
-                duration: .15
-            }
+            opacity: 0
         }
     }
 
@@ -108,7 +105,6 @@ function SideBar() {
                                                 variants={variantsLinks}
                                                 initial="closed"
                                                 animate="opened"
-                                                exit="exit"
                                                 transition={spring}
                                                 
                                                 >
